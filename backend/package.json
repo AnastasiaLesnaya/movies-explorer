@@ -1,0 +1,41 @@
+{
+  "name": "movies-explorer-api",
+  "version": "1.0.0",
+  "description": "Дипломная работа студентки 63 когорты курса Веб-разработчик, Яндекс Практикум",
+  "main": "app.js",
+  "scripts": {
+    "lint": "npx eslint .",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiaLesnaya/movies-explorer-api.git"
+  },
+  "keywords": [],
+  "author": "Anastasia Lesnaya",
+  "license": "ISC",
+  "homepage": "https://github.com/AnastasiaLesnaya/movies-explorer-api/blob/main/README.md",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "eslint": "^8.39.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-require": "^0.0.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "celebrate": "^15.0.1",
+    "mongoose": "^7.1.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "express-winston": "^4.2.0",
+    "validator": "^13.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "helmet": "^6.1.5",
+    "jsonwebtoken": "^9.0.0",
+    "winston": "^3.8.2"
+  }
+}
