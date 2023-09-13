@@ -1,10 +1,22 @@
+import {
+    DESKTOP_FILM_COUNT,
+    TABLET_FILM_COUNT,
+    MOBILE_FILM_COUNT,
+    DESKTOP_BREAKPOINT,
+    MID_DESKTOP_BREAKPOINT,
+    TABLET_BREAKPOINT,
+} from '../../../utils/constants';
+
 export const qtyOfShowingMovies = (setShownMovies) => {
     const display = window.innerWidth;
-    if (display > 1180) {
-        setShownMovies(12);
-    } else if (display > 767) {
-        setShownMovies(8);
+    if (display > DESKTOP_BREAKPOINT) {
+        setShownMovies(DESKTOP_FILM_COUNT);
+    } else if (display >= MID_DESKTOP_BREAKPOINT) {
+        setShownMovies(DESKTOP_FILM_COUNT);
+    }
+     else if (display > TABLET_BREAKPOINT) {
+        setShownMovies(TABLET_FILM_COUNT);
     } else {
-        setShownMovies(5);
+        setShownMovies(MOBILE_FILM_COUNT);
     }
 }
